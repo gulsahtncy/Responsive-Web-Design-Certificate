@@ -5,6 +5,7 @@
   padding: 0;
   box-sizing: border-box;
 }
+ 
 
 body {
   display: flex;
@@ -13,7 +14,10 @@ body {
   justify-content: center;
   min-height: 100vh;
   width: 100vw;
+  font-size: 1.1em;
+  line-height: 1.5;
   font-family: "Poppins", sans-serif;
+  text-align: center;
 }
 
 #main {
@@ -22,48 +26,82 @@ body {
   align-items: center;
   justify-content: center;
   max-width: 1000px;
-  background-color: #333232;
-  color: #f1f1f1;
+  background-color: #eee;
+  color: #333;
   padding: 30px;
 }
 
 #title {
+  display: block;
   text-align: center;
   font-size: 2rem;
 }
 
 #sub-title {
+  display: block;
   margin: 10px auto;
   text-align: center;
+  font-size: 1.2rem;
 }
 
-#img-div {
-  display: flex;
-  flex-direction: column;
+header { 
   justify-content: center;
   align-items: center;
-  width: 100%;
-  margin: 20px auto;
-  background-color: #f1f1f1;
-  color: aqua;
-  text-align: center;
+  padding: 1rem 0 1rem 0;
+  margin-bottom: 20px;
 }
 
-#image {
+figure{
   display: block;
-  max-width: 100%;
-  align-items: center;
-  margin: 0 auto;
-  border-radius: 10px;
-  margin-bottom: 30px;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 40px;
+  margin-inline-end: 40px;
 }
 
-h2 {
+#img-div{
+  background: white;
+  padding: 20px;
+  margin: 10px;
+}
+
+img {
+  display: block; 
+  margin: 0 auto;
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+
+#image{
+  max-width: 100%; 
+  height: auto;
+  max-width: 100%;
+  box-align: center;
+}
+
+h3 {
   text-align: center;
+  margin: 50px 0;
+}
+
+#info-list{
+  display: block;
+  max-width: 550px;
+  margin: 0 auto 50px auto;
+  text-align: left;
+  line-height: 1.6;
 }
 
 .info-list li {
-  margin-top: 20px;
+  margin: 16px 0;
+}
+
+blockquote{
+  display: block;
+  font-style: italic;
+  max-width: 545px;
+  margin: 0 auto 50px auto;
+  text-align: left;
 }
 
 #tribute-link:hover {
@@ -74,5 +112,10 @@ h2 {
 @media (max-width: 500px) {
   #image {
     width: 100%;
+    height: auto;
+  }
+  #headline {
+    text-align: center;
+    font-size: 1rem;
   }
 }
