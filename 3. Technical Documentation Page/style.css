@@ -40,10 +40,6 @@ header {
   font-size: 1.1rem;
 }
 
-/* #navbar li:last-child {
-  border-bottom: 1px double green;
-} */
-
 #navbar a {
   display: block;
   padding: 10px 30px;
