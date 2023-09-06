@@ -51,16 +51,21 @@ header {
   margin-bottom: 20px;
 }
 
+
 #img-div{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   background: white;
-  padding: 20px;
-  margin: 10px;
+  padding: 25px;
+  
 }
 
 #image{
-  display: block;
   max-width: 100%; 
-  height: auto;
+  border-radius: 10px;
 }
 
 #img-caption{
@@ -95,15 +100,4 @@ blockquote{
 #tribute-link:hover {
   text-decoration: none;
   color: rgb(54, 155, 192);
-}
-
-@media (max-width: 500px) {
-  #image {
-    width: 100%;
-    height: auto;
-  }
-  #headline {
-    text-align: center;
-    font-size: 1rem;
-  }
 }
